@@ -48,10 +48,10 @@ export default function ProjectSection() {
                 {projects.map((p, i) => (
                     <motion.div
                         key={i}
-                        className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+                        className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-20"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: i * 0.2 }}
+                        transition={{ duration: 1, delay: i * 0.2 }}
                         viewport={{ once: true }}
                     >
                         <img
