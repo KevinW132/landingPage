@@ -2,7 +2,7 @@ export default function Footer() {
     return (
         <footer
             id="contact"
-            className="py-6 bg-gray-800 text-white text-center"
+            className="py-6 bg-blue-800 text-white text-center"
         >
             <p>© 2025 Kevin DMO | Sígueme en mis redes</p>
             <div className="mt-2 space-x-4">

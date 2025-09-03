@@ -9,3 +9,29 @@
 .floating-self {
     animation: floatRotate 12s linear infinite;
 }
+.miDiseno {
+    position: absolute;
+    bottom: 0px;
+    right: -300px;
+    width: 700px;
+    height: 300px;
+    transform: rotate(-40deg);
+}
+@media (max-width: 770px) {
+    .miDiseno {
+        position: absolute;
+        bottom: 0px;
+        right: -300px;
+        width: 700px;
+        height: 300px;
+        transform: rotate(-40deg);
+    }
+    .miNombre {
+        position: absolute;
+        top: 100px;
+    }
+    .loDemas {
+        position: static;
+        bottom: 0px;
+    }
+}
