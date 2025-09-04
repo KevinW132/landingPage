@@ -12,7 +12,7 @@ const projects = [
         name: "Clon de ChatGPT",
         description:
             "Chatbot con MLC LLM y Web Workers para IA en el navegador.",
-        img: "../../public/img/ia.png",
+        img: "../assets/img/ia.png",
         github: "https://github.com/KevinW132/IAGenerativaLocal",
         demo: "https://ia-generativa-local.vercel.app/",
     },
