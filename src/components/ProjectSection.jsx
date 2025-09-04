@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
+import ia from "../assets/img/ia.png";
+import coffe from "../assets/img/coffe.png";
+import task from "../assets/img/task.png";
 
 const projects = [
     {
         name: "App de Tareas",
         description: "App en React con Supabase, notificaciones y PWA.",
-        img: "../../public/img/task.png",
+        img: task,
         github: "https://github.com/KevinW132/task-tracker-app",
         demo: "https://task-tracker-app-ten.vercel.app/",
     },
@@ -12,7 +15,7 @@ const projects = [
         name: "Clon de ChatGPT",
         description:
             "Chatbot con MLC LLM y Web Workers para IA en el navegador.",
-        img: "../assets/img/ia.png",
+        img: ia,
         github: "https://github.com/KevinW132/IAGenerativaLocal",
         demo: "https://ia-generativa-local.vercel.app/",
     },
@@ -27,7 +30,7 @@ const projects = [
         name: "Coffee Finder",
         description:
             "Aplicacion para encontrar cafes cercanos con APIS externas.",
-        img: "../../public/img/coffe.png",
+        img: coffe,
         github: "https://github.com/KevinW132/Coffe-Finder",
         demo: "https://coffe-finder.vercel.app/",
     },
