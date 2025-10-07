@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import ia from "../assets/img/ia.png";
 import coffe from "../assets/img/coffe.png";
 import task from "../assets/img/task.png";
+import movies from "../assets/img/movie.png";
+import PopupWithGif from "./GifShow";
+import Proyecto from "./Proyecto";
 
 const projects = [
     {
@@ -33,6 +36,14 @@ const projects = [
         img: coffe,
         github: "https://github.com/KevinW132/Coffe-Finder",
         demo: "https://coffe-finder.vercel.app/",
+    },
+    {
+        name: "Movies Recap",
+        description:
+            "Aplicación móvil multiplataforma creada con React Native, Expo Router y NativeWind, con navegación tipo Stack/Tabs y diseño moderno adaptable a iOS, Android y Web.",
+        img: movies,
+        github: "https://github.com/KevinW132/Movie-Getter",
+        demo: "",
     },
 ];
 
@@ -75,42 +86,7 @@ export default function ProjectSection() {
 
             <div className="z-10 grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
                 {projects.map((p, i) => (
-                    <motion.div
-                        key={i}
-                        className="z-10 bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-20"
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: i * 0.2 }}
-                        viewport={{ once: true }}
-                    >
-                        <img
-                            src={p.img}
-                            alt={p.name}
-                            className="w-full object-cover"
-                        />
-                        <div className="p-6">
-                            <h3 className="text-xl font-bold mb-2">{p.name}</h3>
-                            <p className="text-gray-600 mb-4">
-                                {p.description}
-                            </p>
-                            <div className="flex space-x-4">
-                                <a
-                                    href={p.github}
-                                    target="_blank"
-                                    className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition"
-                                >
-                                    GitHub
-                                </a>
-                                <a
-                                    href={p.demo}
-                                    target="_blank"
-                                    className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
-                                >
-                                    Demo
-                                </a>
-                            </div>
-                        </div>
-                    </motion.div>
+                    <Proyecto p={p} i={i} />
                 ))}
             </div>
         </section>

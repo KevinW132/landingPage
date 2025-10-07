@@ -90,6 +90,7 @@ export default function Hero() {
                     "Tailwind",
                     "C#",
                     "TypeScript",
+                    "React Native",
                 ].map((tech, i) => (
                     <motion.span
                         key={i}
