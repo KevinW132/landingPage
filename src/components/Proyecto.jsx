@@ -14,7 +14,7 @@ export default function Proyecto({ p, i }) {
     return (
         <motion.div
             key={i}
-            className="z-10 bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-20"
+            className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-20"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: i * 0.2 }}
